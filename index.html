@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UMASANKAR PRADHAN | Online Mock Test Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ================= LOGIN PAGE ================= -->
+
+  <section id="login-page" class="login-page">
+
+    <div class="login-box">
+
+      <div class="brand-circle">UP</div>
+
+      <h1>UMASANKAR PRADHAN</h1>
+
+      <p class="portal-name">Online Mock Test Portal</p>
+
+      <h2>Student Login</h2>
+
+      <input
+        type="text"
+        id="student-name"
+        placeholder="Enter your name"
+        autocomplete="off"
+      >
+
+      <input
+        type="password"
+        id="student-password"
+        placeholder="Enter password"
+      >
+
+      <button class="login-btn" onclick="studentLogin()">
+        LOGIN
+      </button>
+
+      <p id="login-error" class="login-error"></p>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= HOME PAGE ================= -->
+
+  <main id="home-page" style="display:none;">
+
+    <header class="hero">
+
+      <div class="hero-label">
+        ONLINE EXAMINATION PORTAL
+      </div>
+
+      <h1>UMASANKAR PRADHAN</h1>
+
+      <p>Online Mock Test Portal</p>
+
+      <span>
+        Practice • Analyse • Improve • Succeed
+      </span>
+
+    </header>
+
+
+    <section class="date-section">
+
+      <div class="today-label">
+        TODAY'S DAILY MOCK TEST
+      </div>
+
+      <h2 id="today-date">
+        Loading date...
+      </h2>
+
+      <p>
+        Welcome,
+        <strong id="logged-student-name"></strong>
+      </p>
+
+    </section>
+
+
+    <!-- ================= DAILY TESTS ================= -->
+
+    <section class="tests-container">
+
+      <!-- SSD / JT -->
+
+      <div class="test-card">
+
+        <div class="test-badge">
+          CDP
+        </div>
+
+        <h2>SSD / JT – CDP</h2>
+
+        <p>
+          Child Development & Pedagogy
+        </p>
+
+        <div class="test-details">
+
+          <span>60 Questions</span>
+          <span>60 Minutes</span>
+
+        </div>
+
+        <button
+          onclick="startTest('ssd-jt')"
+          class="start-btn"
+        >
+          START TEST
+        </button>
+
+      </div>
+
+
+      <!-- HINDI -->
+
+      <div class="test-card">
+
+        <div class="test-badge">
+          हिन्दी
+        </div>
+
+        <h2>Hindi – CDP</h2>
+
+        <p>
+          Child Development & Pedagogy
+        </p>
+
+        <div class="test-details">
+
+          <span>60 Questions</span>
+          <span>60 Minutes</span>
+
+        </div>
+
+        <button
+          onclick="startTest('hindi-cdp')"
+          class="start-btn"
+        >
+          START TEST
+        </button>
+
+      </div>
+
+
+      <!-- SSB TGT -->
+
+      <div class="test-card">
+
+        <div class="test-badge">
+          TGT
+        </div>
+
+        <h2>SSB TGT – CDP</h2>
+
+        <p>
+          Child Development & Pedagogy
+        </p>
+
+        <div class="test-details">
+
+          <span>60 Questions</span>
+          <span>60 Minutes</span>
+
+        </div>
+
+        <button
+          onclick="startTest('ssb-tgt-cdp')"
+          class="start-btn"
+        >
+          START TEST
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= INSTRUCTIONS ================= -->
+
+    <section class="instructions">
+
+      <h2>Test Instructions</h2>
+
+      <ul>
+
+        <li>
+          Each daily test contains 60 MCQs.
+        </li>
+
+        <li>
+          Total time: 60 minutes.
+        </li>
+
+        <li>
+          Select one answer from A, B, C or D.
+        </li>
+
+        <li>
+          Questions can be visited using the question palette.
+        </li>
+
+        <li>
+          The test automatically submits when time reaches zero.
+        </li>
+
+        <li>
+          After submission, score and detailed explanations are shown.
+        </li>
+
+        <li>
+          Use the Full Screen button for a distraction-free test.
+        </li>
+
+      </ul>
+
+    </section>
+
+
+    <footer>
+
+      © 2026 UMASANKAR PRADHAN
+      <br>
+      Online Mock Test Portal
+
+    </footer>
+
+  </main>
+
+
+  <!-- ================= TEST SCREEN ================= -->
+
+  <main
+    id="test-screen"
+    style="display:none;"
+  ></main>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
